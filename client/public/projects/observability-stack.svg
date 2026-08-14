@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#052e2b"/>
+      <stop offset="100%" stop-color="#0f3d33"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg3)"/>
+  <g opacity="0.08" stroke="#34d399" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+  <g transform="translate(80,140)">
+    <polyline points="0,110 60,70 120,90 180,30 240,55 300,10 360,40 420,-10" fill="none" stroke="url(#accent3)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="110" r="6" fill="#34d399"/>
+    <circle cx="120" cy="90" r="6" fill="#34d399"/>
+    <circle cx="240" cy="55" r="6" fill="#34d399"/>
+    <circle cx="360" cy="40" r="6" fill="#34d399"/>
+    <circle cx="420" cy="-10" r="6" fill="#2dd4bf"/>
+    <rect x="0" y="130" width="30" height="40" fill="#2dd4bf" opacity="0.5"/>
+    <rect x="45" y="110" width="30" height="60" fill="#2dd4bf" opacity="0.6"/>
+    <rect x="90" y="90" width="30" height="80" fill="#2dd4bf" opacity="0.7"/>
+    <rect x="135" y="120" width="30" height="50" fill="#2dd4bf" opacity="0.5"/>
+  </g>
+  <text x="60" y="330" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#e2e8f0">Production Observability &amp;</text>
+  <text x="60" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#34d399">Self-Healing Automation</text>
+  <text x="60" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#94a3b8">Grafana &#8226; CloudWatch &#8226; AWS Lambda</text>
+</svg>

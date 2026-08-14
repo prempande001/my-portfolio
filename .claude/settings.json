@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(grep -ril \"gaurav\" client/src)",
+      "Bash(grep -c \"gaurav\" client/src/components/ReadmeInfo/Info.md)",
+      "Bash(npx --yes playwright screenshot --help)",
+      "Bash(npx --yes playwright screenshot --full-page --wait-for-timeout 4000 --viewport-size 1400,900 http://localhost:5173/ full_page.png)"
+    ]
+  }
+}

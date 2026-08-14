@@ -6,6 +6,7 @@ import Skills from "../components/Skills/Skills.jsx"
 import Projects from "../components/Projects/Projects.jsx"
 import Experience from "../components/Experience/Experience.jsx"
 import Profiles from "../components/Profiles/Profiles.jsx"
+import ScrollZoom from "../components/common/ScrollZoom.jsx"
 
 
 
@@ -15,26 +16,27 @@ import Profiles from "../components/Profiles/Profiles.jsx"
 function Landing() {
   return (
     <div>
-
-
-      <button className="fixed font-semibold text-2xl bottom-12 left-[45%] border-2 border-green-400 rounded-2xl bg-black text-green-400 p-2 ">
-
-        <a href="mailto:gauravghuge737@gmail.com"> Hire Me <br />Lets Talk </a>
-      
-      </button>
-
-
       <About />
 
-      <Skills />
+      <ScrollZoom zoomFrom={0.9}>
+        <Skills />
+      </ScrollZoom>
 
-      <Profiles />
+      <ScrollZoom zoomFrom={0.92}>
+        <Profiles />
+      </ScrollZoom>
 
-      <Projects />
+      <ScrollZoom zoomFrom={0.9}>
+        <Projects />
+      </ScrollZoom>
 
-      <Experience />
+      <ScrollZoom zoomFrom={0.92}>
+        <Experience />
+      </ScrollZoom>
 
-      <Contact />
+      <ScrollZoom zoomFrom={0.94} intensity={0.7}>
+        <Contact />
+      </ScrollZoom>
 
     </div>
   )

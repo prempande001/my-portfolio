@@ -3,10 +3,6 @@
   margin: 0 auto;
 }
 
-.experience-card {
-  background-color: #1a1a1a;
-}
-
 .experience-card:hover {
   transform: translateY(-5px);
 }

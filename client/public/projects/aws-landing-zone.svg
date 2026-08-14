@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a05"/>
+      <stop offset="100%" stop-color="#3a2405"/>
+    </linearGradient>
+    <linearGradient id="accent4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg4)"/>
+  <g opacity="0.08" stroke="#fb923c" stroke-width="1">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="300" y1="0" x2="300" y2="450"/>
+    <line x1="500" y1="0" x2="500" y2="450"/>
+    <line x1="700" y1="0" x2="700" y2="450"/>
+  </g>
+  <g transform="translate(120,120)" fill="none" stroke="url(#accent4)" stroke-width="5">
+    <path d="M40,90 a35,35 0 0 1 0,-70 a45,45 0 0 1 88,-10 a38,38 0 0 1 12,74 z" />
+    <path d="M60,60 L60,110 M40,80 L80,80 M75,95 L45,95" stroke-width="4"/>
+    <rect x="200" y="20" width="60" height="80" rx="8"/>
+    <path d="M215,50 v-15 a15,15 0 0 1 30,0 v15" />
+    <rect x="210" y="50" width="40" height="35" rx="4"/>
+  </g>
+  <text x="60" y="330" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">Secure, Highly-Available</text>
+  <text x="60" y="368" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#fb923c">AWS Banking Infrastructure</text>
+  <text x="60" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#94a3b8">Terraform &#8226; IAM &#8226; VPC &#8226; RDS</text>
+</svg>
