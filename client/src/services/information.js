@@ -14,7 +14,7 @@ export const project = [
         repository: 'https://github.com/prempande001',
         image: '/projects/cicd-pipeline.svg',
         url: 'https://github.com/prempande001',
-        technologies: 'Jenkins, Terraform, Maven, Git/GitHub, GitOps, Pipeline-as-Code',
+        technologies: 'Jenkins, Terraform, Maven, Git/GitHub, GitOps, Pipeline-as-Code, SonarQube, Trivy',
         status: 'Completed',
         notice: 'Representative of enterprise CI/CD work delivered for Bank Muscat at Infosys. Source is private; repository link points to my GitHub profile.',
     },
@@ -87,9 +87,10 @@ export const experience = [
             "Containerized Java applications using Docker and orchestrated deployments on Kubernetes with Helm, implementing blue-green and canary deployment strategies that reduced environment-related issues and improved resource utilization.",
             "Managed core AWS services (EC2, S3, IAM, VPC, ELB, Auto Scaling) to deliver high-availability, disaster-recovery-ready infrastructure, maintaining 99.9% uptime for banking applications while cutting monthly cloud costs by 20% through optimized resource planning.",
             "Automated backup, alerting, and self-healing workflows using AWS Lambda and Bash scripting, reducing manual operational effort by over 60%.",
-            "Strengthened security posture by implementing least-privilege IAM policies and VPC network rules aligned with DevSecOps practices, helping the team pass security audits with zero critical findings.",
+            "Followed DevSecOps practices by using SonarQube to scan code for vulnerabilities and Trivy to scan Docker images, along with least-privilege IAM policies and VPC network rules, helping the team pass security audits with zero critical findings.",
             "Monitored system health and performance using Grafana and CloudWatch, enabling faster incident detection and driving ITIL-aligned incident and change management, while providing L2/L3 production support to resolve issues within SLA.",
             "Managed GitHub repositories and branching strategy, and standardized builds with Maven, achieving a 95% success rate on production deployments within an Agile/Scrum delivery model.",
+            "Developed and managed declarative Jenkins pipelines using Jenkinsfile and Dockerfile stored in GitHub, enabling Jenkins to automatically detect code changes and execute the required build, code scanning, Docker image creation, and deployment steps.",
             "Automated server provisioning and configuration using Ansible, ensuring consistency across environments and reducing manual deployment effort by 50%.",
             "Configured Kubernetes auto-scaling and health checks, enabling automatic traffic handling and self-healing of containers on failure, and improving overall application resilience.",
             "Administered AWS RDS databases, including backups, monitoring, and scaling, ensuring reliable database operations with minimal manual intervention.",
@@ -167,6 +168,7 @@ export const skill = [
             { name: "AWS Storage & Database — S3, EBS, RDS, DynamoDB", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" },
             { name: "AWS Networking — VPC, Route53, ELB, AMI", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" },
             { name: "AWS Messaging & Monitoring — SNS, CloudWatch, Amazon Connect", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" },
+            { name: "AWS CloudFormation", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" },
         ]
     },
     {
@@ -226,6 +228,7 @@ export const skill = [
             { name: "IAM Policies & VPC Security Groups", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" },
             { name: "AWS Secrets Manager", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg" },
             { name: "SonarQube", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/sonarqube.svg" },
+            { name: "Trivy", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/trivy.svg" },
         ]
     },
     {
