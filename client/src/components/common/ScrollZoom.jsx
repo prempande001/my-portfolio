@@ -17,7 +17,6 @@ function ScrollZoom({ children, className = "", zoomFrom = 0.85, intensity = 1 }
 
   const scale = useTransform(scrollYProgress, [0, 1], [zoomFrom, 1]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1 - 0.7 * intensity, 1]);
-  const blur = useTransform(scrollYProgress, [0, 1], [`blur(${6 * intensity}px)`, "blur(0px)"]);
 
   if (prefersReducedMotion) {
     return (
@@ -30,7 +29,7 @@ function ScrollZoom({ children, className = "", zoomFrom = 0.85, intensity = 1 }
   return (
     <motion.div
       ref={ref}
-      style={{ scale, opacity, filter: blur, willChange: "transform, opacity, filter" }}
+      style={{ scale, opacity, willChange: "transform, opacity" }}
       className={className}
     >
       {children}
