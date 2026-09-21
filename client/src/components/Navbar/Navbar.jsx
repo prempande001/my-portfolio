@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,8 +13,11 @@ import { education, experience, project, skill } from "../../services/informatio
 
 
 
+const navItems = ["Experience", "Education", "Projects", "Contact", "Information"];
+
 function Navbar() {
     const dispatch = useDispatch();
+    const location = useLocation();
     const darkMode = useSelector((state) => state.mainSlice.darkMode);
     const smallMobileNav = useMediaQuery('(max-width: 724px)');
     const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -150,18 +153,26 @@ function Navbar() {
                         {darkMode ? <DarkModeIcon className="text-yellow-400 text-xl sm:text-2xl" /> : <LightModeIcon className="text-yellow-600 text-xl sm:text-2xl" />}
                     </button>
 
-                    <ul className="hidden lg:flex items-center gap-4 xl:gap-6 text-sm">
-                        {["Experience", "Education", "Projects", "Contact", "Information"].map((item) => (
-                            <li key={item}>
-                                <Link 
-                                    to={`/${item}`} 
-                                    className={`relative group ${darkMode ? 'hover:text-blue-400' : 'hover:text-blue-600'} transition`}
-                                >
-                                    {item}
-                                    <span className={`absolute left-0 bottom-0 h-0.5 ${darkMode ? 'bg-blue-400' : 'bg-blue-600'} w-0 group-hover:w-full transition-all duration-500 ease-out`}></span>
-                                </Link>
-                            </li>
-                        ))}
+                    <ul className={`hidden lg:flex items-center gap-1 xl:gap-1.5 text-sm rounded-full p-1.5 ${darkMode ? 'bg-white/5' : 'bg-violet-50'}`}>
+                        {navItems.map((item) => {
+                            const isActive = location.pathname.toLowerCase() === `/${item.toLowerCase()}`;
+                            return (
+                                <li key={item}>
+                                    <Link
+                                        to={`/${item}`}
+                                        className={`block px-4 xl:px-5 py-2 rounded-full font-medium transition-colors duration-300 ${
+                                            isActive
+                                                ? 'bg-violet-600 text-white shadow-sm'
+                                                : darkMode
+                                                    ? 'text-gray-300 hover:bg-white/10'
+                                                    : 'text-gray-600 hover:bg-white hover:shadow-sm'
+                                        }`}
+                                    >
+                                        {item}
+                                    </Link>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
             </motion.nav>
@@ -200,16 +211,27 @@ function Navbar() {
                             )}
                         </div>
                     )}
-                    {["Experience", "Education", "Projects", "Contact", "Information"].map((item) => (
-                        <Link
-                            key={item}
-                            to={`/${item}`}
-                            onClick={() => setShowMobileMenu(false)}
-                            className={`py-2 px-4 w-full text-center ${darkMode ? 'hover:bg-gray-700 border-gray-700' : 'hover:bg-gray-100 border-gray-200'} transition border-b`}
-                        >
-                            {item}
-                        </Link>
-                    ))}
+                    <div className="flex flex-col gap-2 w-full px-4">
+                        {navItems.map((item) => {
+                            const isActive = location.pathname.toLowerCase() === `/${item.toLowerCase()}`;
+                            return (
+                                <Link
+                                    key={item}
+                                    to={`/${item}`}
+                                    onClick={() => setShowMobileMenu(false)}
+                                    className={`py-2.5 px-4 w-full text-center rounded-full font-medium transition-colors duration-300 ${
+                                        isActive
+                                            ? 'bg-violet-600 text-white shadow-sm'
+                                            : darkMode
+                                                ? 'text-gray-300 hover:bg-white/10'
+                                                : 'text-gray-600 hover:bg-violet-50'
+                                    }`}
+                                >
+                                    {item}
+                                </Link>
+                            );
+                        })}
+                    </div>
                 </div>
             )}
         </main>

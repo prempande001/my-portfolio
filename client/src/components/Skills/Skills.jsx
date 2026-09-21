@@ -20,6 +20,7 @@ const CATEGORY_STYLES = {
   scripting: { iconGlow: "bg-yellow-500 dark:bg-yellow-400", glow: "hover:shadow-yellow-500/30 hover:border-yellow-400/50", dot: "bg-yellow-500/30 border-yellow-400/50" },
   security: { iconGlow: "bg-red-500 dark:bg-red-400", glow: "hover:shadow-red-500/30 hover:border-red-400/50", dot: "bg-red-500/30 border-red-400/50" },
   systems: { iconGlow: "bg-slate-500 dark:bg-slate-400", glow: "hover:shadow-slate-500/30 hover:border-slate-400/50", dot: "bg-slate-500/30 border-slate-400/50" },
+  methodology: { iconGlow: "bg-indigo-500 dark:bg-indigo-400", glow: "hover:shadow-indigo-500/30 hover:border-indigo-400/50", dot: "bg-indigo-500/30 border-indigo-400/50" },
 };
 
 const ShatterText = ({ text, className }) => {

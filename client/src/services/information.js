@@ -241,4 +241,15 @@ export const skill = [
             { name: "Notepad++ & VS Code", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/visualstudiocode.svg" },
         ]
     },
+    {
+        name: "Methodologies & Practices",
+        type: "methodology",
+        items: [
+            { name: "Agile & Scrum Delivery", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/scrumalliance.svg" },
+            { name: "DevSecOps", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/owasp.svg" },
+            { name: "CI/CD Pipeline as Code", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/githubactions.svg" },
+            { name: "Blue-Green Deployments", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/argo.svg" },
+            { name: "High Availability & Disaster Recovery", icon: "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/statuspage.svg" },
+        ]
+    },
 ]
