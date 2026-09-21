@@ -54,7 +54,7 @@ function Footer() {
               className='bg-gray-800 p-2 sm:p-3 rounded-lg hover:bg-gray-700 transition duration-300 text-center'
             >
               <a
-                href="mailto:prempande001@gmail.com"
+                href="mailto:pdpande9730@gmail.com"
                 className='text-sm sm:text-base text-white hover:text-yellow-400 transition duration-300'
               >
                 Email Me
@@ -69,8 +69,8 @@ function Footer() {
               {[
                 { name: 'GitHub', url: 'https://github.com/prempande001' },
                 { name: 'LinkedIn', url: 'https://www.linkedin.com/in/parmeshwar-pande-572208249' },
-                { name: 'WhatsApp', url: 'https://wa.me/919730574564' },
-                { name: 'Gmail', url: 'mailto:prempande001@gmail.com' },
+                { name: 'WhatsApp', url: 'https://wa.me/919730565764' },
+                { name: 'Gmail', url: 'mailto:pdpande9730@gmail.com' },
               ].map((link) => (
                 <motion.div
                   key={link.name}

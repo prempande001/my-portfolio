@@ -25,18 +25,18 @@ function Profiles() {
         {
             title: "WhatsApp",
             icon: "/whatsapp.svg",
-            link: "https://wa.me/919730574564",
+            link: "https://wa.me/919730565764",
             description: "Message me directly on WhatsApp",
-            username: "+91-9730574564",
+            username: "+91-9730565764",
             color: "from-green-700 to-green-900",
             hoverColor: "hover:shadow-green-500/20 hover:border-green-400/30"
         },
         {
             title: "Gmail",
             icon: "/gmail.svg",
-            link: "mailto:prempande001@gmail.com",
+            link: "mailto:pdpande9730@gmail.com",
             description: "Send me an email on Gmail",
-            username: "prempande001@gmail.com",
+            username: "pdpande9730@gmail.com",
             color: "from-red-700 to-red-900",
             hoverColor: "hover:shadow-red-500/20 hover:border-red-400/30"
         },

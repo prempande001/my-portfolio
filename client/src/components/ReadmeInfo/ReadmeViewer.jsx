@@ -40,16 +40,16 @@ const ReadmeViewer = () => {
     },
     email: {
       label: "Email",
-      text: "prempande001@gmail.com",
-      link: "mailto:prempande001@gmail.com",
+      text: "pdpande9730@gmail.com",
+      link: "mailto:pdpande9730@gmail.com",
     },
     phone: {
       label: "Phone",
-      text: "+91-9730574564",
+      text: "+91-9730565764",
     },
     location: {
       label: "Location",
-      text: "Mumbai, Maharashtra, India",
+      text: "Pune, Maharashtra, India",
     },
     links: [
       { label: "GitHub", url: "https://github.com/prempande001" },

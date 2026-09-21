@@ -157,7 +157,7 @@ export default class Contact extends Component {
                 <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-blue-400 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-blue-400 mb-1">PHONE</h3>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 break-all">+91-9730574564</p>
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 break-all">+91-9730565764</p>
                 </div>
               </motion.div>
 
@@ -168,7 +168,7 @@ export default class Contact extends Component {
                 <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-blue-400 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-blue-400 mb-1">EMAIL</h3>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 break-all">prempande001@gmail.com</p>
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 break-all">pdpande9730@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -180,7 +180,7 @@ export default class Contact extends Component {
                 <div>
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-blue-400 mb-1">LOCATION</h3>
                   <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                    Mumbai, Maharashtra, India
+                    Pune, Maharashtra, India
                   </p>
                 </div>
               </motion.div>

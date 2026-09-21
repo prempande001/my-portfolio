@@ -2,9 +2,9 @@
 
 **AWS DevOps Engineer | AWS Cloud & CI/CD Automation**
 
-📞 +91-9730574564
-📧 prempande001@gmail.com
-📍 Mumbai, Maharashtra, India
+📞 +91-9730565764
+📧 pdpande9730@gmail.com
+📍 Pune, Maharashtra, India
 
 [LinkedIn](https://www.linkedin.com/in/parmeshwar-pande-572208249) | [GitHub](https://github.com/prempande001)
 
