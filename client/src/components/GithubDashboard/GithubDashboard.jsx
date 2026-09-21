@@ -77,7 +77,7 @@ const GithubDashboard = () => {
 
       {/* Contact */}
       <Reveal>
-        <h4 className="text-lg mb-8">📫 How to reach me: <strong>pdpande9730@gmail.com</strong></h4>
+        <h4 className="text-lg mb-8">📫 How to reach me: <strong>prempande001@gmail.com</strong></h4>
       </Reveal>
 
       {/* Social Links */}
